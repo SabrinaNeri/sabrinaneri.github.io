@@ -1,0 +1,636 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: #04216e;/*cor de fundo dos menus*/
+    height: 98px;
+    width: 100%;
+}
+/*label .logo{
+    color: white
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+}*/
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: 04216e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor:pointer;
+    display: none;
+    padding: 30;
+}
+#check{
+    display: none;
+}
+
+@media(max-width:951px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+
+}
+@media(max-width:858px){
+   .checkbtn{
+    display: block;
+   }
+   
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0850bb;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   }
+   nav ul li a{
+    font-size: 20px;
+   }
+   a:hover,a.active{
+    background: none;
+    color: #0082e6;
+   }
+   #check:checked ~ ul{
+    left: 0;
+   }
+   
+   
+}
+section{
+    background: url(img/capadotestando.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+/*ate aq td certo========*//*atee agr td ceeerto*/
+
+
+
+
+
+/*html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+*/
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+header nav ul li{
+   position: relative;
+   float: left;
+  }
+
+header nav ul li a{
+    font-size: 20px; /*tamanho da fonte dos menuzinhos de teoria, experimento blabla*/
+    padding: 20px;
+    display: block;
+}
+  
+header.rolagem{
+    background-color: #04216d;
+}
+
+nav a{ /*menu com dropdown*/
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 50px 10px 0px ;
+    font-size: 5pt;
+    position: relative;
+}*/
+
+nav a::after{ /*menu com a corzinha embaixo*/
+   content: " ";
+   width: 0%;
+   height: 4px; /*grossura da corzinha embaixo do nome do menu*/
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: #04216e;
+   transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{  /*transção do menu com a corzinha embaixo*/
+   width: 100%;
+   background-color: #1897c9;
+
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+nav li a{
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 15px;
+    align-items: center;
+}
+
+nav a ul li{
+    position: absolute;
+    width: 200px;
+    background: #fff;
+}
+
+.dropdown-teoria {
+  position: absolute;
+  box-shadow: 0 0 2px #000000;
+  display: none;
+ }
+
+.dropdown-teoria a{
+   display: block;
+   color: hsl(249, 92%, 10%);
+   font-size: 11px;
+   width: 350px;
+   padding: 3%;
+   
+}
+
+.dropdown1:hover .dropdown-teoria{
+     display: block;
+     background-color: #fff
+}
+
+.dropdown-experimento {
+   position: absolute;
+   box-shadow: 0 0 2px #000;
+   display: none;
+  }
+ 
+ .dropdown-experimento a{
+    display: block;
+    color: #090231;
+    font-size: 11px;
+    width: 350px;
+    padding: 3%;
+ }
+ 
+ .dropdown2:hover .dropdown-experimento{
+      display: block;
+      background-color: #fff
+ }
+ .dropdown-teoria {
+  position: absolute;
+  box-shadow: 0 0 2px #000000;
+  display: none;
+ }
+
+.dropdown-teoria a{
+   display: block;
+   color: hsl(249, 92%, 10%);
+   font-size: 11px;
+   width: 350px;
+   padding: 3%; 
+}
+
+.dropdown3:hover .dropdown-contato{
+    display: block;
+    background-color: #fff
+}
+.dropdown-contato {
+position: absolute;
+box-shadow: 0 0 2px #000000;
+display: none;
+}
+
+.dropdown-contato a{
+ display: relative;
+ color: hsl(249, 92%, 10%);
+ font-size: 11px;
+ width: 300px;
+ padding: 3%;
+}
+
+
+ .containerslidebanner{
+    height: 15vh;
+    background-image: url(img/fundoslide.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /*--- - ---- --- telas iniciais com o menu  -- --- */
+
+.fundoondapontualextensa{
+    background: url(img/fonteondapontualextensateoria1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.fundoondapontualextensa2{
+    background: url(img/fonteondapontualextensateoria2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.fundoondapontualextensa3{
+    background: url(img/fonteondapontualextensateoria3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.frentesdeondas{
+    background: url(img/frenteondaretilineacircularesteoria1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.frentesdeondas2{
+    background: url(img/frenteondaretilineacircularesteoria2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.frentesdeondas3{
+    background: url(img/frenteondaretilineacircularesteoria3.png) no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.determinacaocomprimentodeondateoria{
+    background: url(img/determinacaocomprimentodeondateoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.determinacaocomprimentodeondateoria2{
+    background: url(img/determinacaocomprimentodeondateoria2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.determinacaocomprimentodeondateoria3{
+    background: url(img/determinacaocomprimentodeondateoria3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.relacaofrequenciacomprimentoonda{
+    background: url(img/analisefrequenciacomprimentoteoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+.relacaofrequenciacomprimentoonda2{
+    background: url(img/analisefrequenciacomprimentoteoria2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+
+.efeitodoppler{
+    background: url(img/efeitodopplerteoria1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.efeitodoppler2{
+    background: url(img/efeitodopplerteoria2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.reflexaoondasteoria{
+    background: url(img/reflexaoondasteoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+footer{
+    background: url(img/completarla.png) no-repeat;
+    background-size: cover;
+    height: 135px;
+}
+.refracaoteoria{
+    background: url(img/refracaoteoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.difracaoteoria{
+    background: url(img/difracaoteoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.interferenciateoria{
+    background: url(img/interferenciateoria.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfundoondapontualextensa{
+    background: url(img/expfontepontual.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfundoondapontualextensa2{
+    background: url(img/expondasretilineas.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfundoondapontualextensa3{
+    background: url(img/ondaspontextenanalise.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfrentedeonda{
+    background: url(img/visualizaçãodeondascirculares.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfrentedeonda2{
+    background: url(img/visualizaçãodeondasretilíneas.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfrentedeonda3{
+    background: url(img/analexpfrentedeonda.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expcompdeonda{
+    background: url(img/detcompdeonda1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expcompdeonda2{
+    background: url(img/detcompdeonda2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expcompdeonda3{
+    background: url(img/detcompdeonda3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfreqcompdeonda{
+    background: url(img/relcompdeonda1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfreqcompdeonda2{
+    background: url(img/relcompdeonda2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expfreqcompdeonda3{
+    background: url(img/relcompdeonda3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expefeitodoppler1{
+    background: url(img/efeitodoppler1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expefeitodoppler2{
+    background: url(img/efeitodoppler2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expefeitodoppler3{
+    background: url(img/efeitodoppler3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expreflexao1{
+    background: url(img/reflexao1.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expreflexao2{
+    background: url(img/reflexao2.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.expreflexao3{
+    background: url(img/reflexao3.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.refracao{
+    background: url(img/refracao.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.difracao{
+    background: url(img/difracao.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.interferencia{
+    background: url(img/interferencia.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+
+/* ----------           -------------------------------------*/
+
+
+ h2{
+    font-weight: 20;
+    font-size: 15px;
+    z-index: 1;
+    width: 10;
+    height: 300;
+ }
+
+.container h1,h3{
+    font-family: sans-serif;
+    color: #04216d;
+    text-shadow: 0 5px 10px #fff;
+    text-align: center;
+}
+
+.container h3{
+    font-size: 40px;
+    
+}
+.container p{
+    margin: 1em;
+    font-family: sans-serif;
+    color: #04216d;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ParaImage{
+    width: 100%;
+    height: 100px;
+    background-attachment: relative;
+    background-size: 100% 100%;
+    padding: 250px 0px;/*tamanho da tela depois do video*/
+}
+
+.bg1{
+    background-image: url(img/fotohertz.jpg);
+}
+
+.ParaContent{
+    background-color: #e5e6ef;
+    padding: 60px;/*tamanho da pagina com os textos entre o video*/
+}
+.ParaVideo{
+    height: 300px;
+    padding: 0px 0px;
+    
+}
+.ParaVideo video{
+    width: 100%;/*pro video ficar do tamanho horizontal completo*/
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    z-index: -999;
+}
+
+
+.containerslide{
+    position: absolute; /*sem isso aq os botaozinhos obedecem*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 93vh;
+    background: #d4e7f1;
+    z-index: -1;
+}
+
+.containerslide input{
+    appearance: none;
+}
+
+.containerslide .dots{
+    position: absolute;
+    bottom: 1px;
+    z-index: 1000;
+    display: flex;
+    gap: 6px;
+}
+
+.containerslide .dots label{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: 2px solid #222;
+
+}
+
+.containerslide input:nth-child(1):checked ~ .dots label:nth-child(1),
+.containerslide input:nth-child(2):checked ~ .dots label:nth-child(2),
+.containerslide input:nth-child(3):checked ~ .dots label:nth-child(3)
+{
+    opacity: 1;
+}
+
+.containerslide .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
+    height: 400px;
+}
+.containerslide .slider .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-image);
+    background-size: cover;
+    clip-path: circle(0% at 0% 50%);
+    transition: 1.5s;
+    transition-delay: 0s;
+    background-position: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.containerslide .slider .slide:nth-child(even){
+    clip-path: circle(0% at 100% 50%);
+    background-position: right;
+}
+
+.containerslide input:nth-child(1):checked ~ .slider .slide:nth-child(1),
+.containerslide input:nth-child(2):checked ~ .slider .slide:nth-child(2),
+.containerslide input:nth-child(3):checked ~ .slider .slide:nth-child(3)
+{   
+    clip-path: circle(150% at 50% 50%);  
+    transition-delay: 1s;
+    background-position: center;
+}
+.contentslider{
+    position: relative;
+    padding: 20px 20px 190px 150px;
+    max-width: 550px;
+}
+.containerslide h1{
+    color: #fff;
+    font-size: 2em;
+}
+.contentslider h2{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 10 20px 20px #fff;
+    
+} 
+.contentslider p{
+    color: #fff;
+    font-size: 18px;
+} 
