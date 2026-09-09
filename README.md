@@ -1,4 +1,5 @@
-🔬 Simuladores de Fenômenos Físicos e Ondulatórios
+🔬 Simulador de Fenômenos Físicos e Ondulatórios
+
 Este repositório reúne um conjunto de aplicações web interativas desenvolvidas para a **visualização, simulação e análise de conceitos da física e da ondulatória**. O projeto une o rigor científico à tecnologia web, funcionando como uma ferramenta de apoio educacional e de pesquisa empírica.
 
 Principais Linhas de Investigação e Desenvolvimento:
