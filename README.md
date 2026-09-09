@@ -15,7 +15,7 @@ Desenvolver este ecossistema de simuladores do zero foi um grande desafio físic
 ## 🌐 Acesse o Projeto
 
 O site está publicado externamente e pode ser testado em tempo real pelo link abaixo:
-🔗 **[Visite o Projeto Hertz na Netlify](https://hertzsite.netlify.app)**
+🔗 **[Visite o Projeto Hertz na Netlify](https://hertzsite.netlify.app/)**
 
 
 
