@@ -1,34 +1,29 @@
-🔬 Simulador de Fenômenos Físicos e Ondulatórios
-
-Este repositório reúne um conjunto de aplicações web interativas desenvolvidas para a **visualização, simulação e análise de conceitos da física e da ondulatória**. O projeto une o rigor científico à tecnologia web, funcionando como uma ferramenta de apoio educacional e de pesquisa empírica.
-
-Principais Linhas de Investigação e Desenvolvimento:
-
-**Modelagem Numérica:** Tradução de conceitos físicos complexos em representações visuais fidedignas (HTML5/CSS3).
-
-**Acessibilidade Científica:** Democratização do acesso a experimentos de laboratório de forma digital e interativa.
-
-**Interatividade Dinâmica:** Resposta instantânea a variáveis alteradas pelo usuário (frequência, comprimento de onda, refração).
+🔬 Simulador de Fenômenos Físicos e Ondulatórios — Projeto Hertz
 
 
-📂 Fenômenos Simulados
-O ecossistema do projeto conta com os seguintes módulos científicos:
-
-**Efeito Doppler (`efeitodoppler.html`):** Visualização da alteração da frequência observada devido ao movimento relativo entre fonte e observador.
-
-**Refração e Difração (`refracaodifracaointerferencia.html`):** Simulação do comportamento de ondas ao mudarem de meio e ao contornarem obstáculos.
-
-**Reflexão de Ondas (`reflexaoodas.html`):** Demonstração gráfica do retorno de frentes de onda ao atingirem superfícies rígidas.
-
-**Frequência e Comprimento de Onda (`relacaofrequenciacomprimentoo.html`):** Ferramentas matemáticas analíticas para cálculo e comparação da velocidade de propagação.
+**Projeto Hertz** é uma aplicação web interativa voltada para a visualização e o estudo prático de conceitos da física e da ondulatória (como Efeito Doppler, Refração, Difração e Reflexão de ondas). 
 
 
-🛠️ Tecnologias Utilizadas
-Para garantir leveza, alta performance de renderização gráfica nos navegadores e portabilidade, foram utilizadas as tecnologias web nativas:
+## 💡 Sobre o Projeto e Minha Trajetória
 
-**HTML5:** Estruturação semântica dos dados e elementos dos simuladores.
+Este projeto nasceu de uma iniciativa inteiramente **autodidata durante o meu Ensino Médio**. Como eu não tive aulas formais ou disciplinas na escola que ensinassem o uso dessas ferramentas de programação (HTML, CSS e hospedagem), precisei buscar todo o conhecimento por conta própria na internet, não possuía o conhecimento de como deixar um site responsivo.
 
-**CSS3:** Estilização, responsividade e animações dinâmicas para a interface do usuário.
+Desenvolver este ecossistema de simuladores do zero foi um grande desafio físico e lógico. Tenho muito orgulho do resultado alcançado: ver este site totalmente funcional, estruturado e rodando na web representa um marco importante no meu aprendizado técnico e científico, mesmo sabendo que sempre há espaço para evoluções e melhorias contínuas.
+
+
+
+## 🌐 Acesse o Projeto
+
+O site está publicado externamente e pode ser testado em tempo real pelo link abaixo:
+🔗 **[Visite o Projeto Hertz na Netlify](https://netlify.app)**
+
+
+
+## 🛠️ Tecnologias Utilizadas
+
+Para dar vida aos conceitos de física analítica no ecossistema web, utilizei tecnologias nativas:
+* **HTML5:** Estruturação semântica e esqueleto das páginas de simulação.
+* **CSS3:** Animações dinâmicas, posicionamento dos elementos e responsividade da interface.
 
 
 👤 Desenvolvedora
